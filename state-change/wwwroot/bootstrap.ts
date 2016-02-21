@@ -2,7 +2,7 @@
 
 import { QueryActionCreator } from "./actions/query-actions";
 import { AppComponent } from "./components/app";
-import { editQueryReducer } from "./reducers/query-reducers";
+import { setQueryReducer } from "./reducers/query-reducers";
 
 var app = (<any>angular.module("app", [
     "addOrUpdate",    
@@ -15,7 +15,7 @@ var app = (<any>angular.module("app", [
 ]));
 
 app.config(["reducersProvider", reducersProvider => {
-    reducersProvider.configure(editQueryReducer);
+    reducersProvider.configure(setQueryReducer);
 }]);
 
 app.service("queryActionCreator", ["dispatcher", "guid", QueryActionCreator]);

@@ -46,3 +46,4 @@ var Responsivir = (function () {
     return Responsivir;
 })();
 exports.Responsivir = Responsivir;
+//# sourceMappingURL=responsivir.js.map
