@@ -76,7 +76,6 @@
     <Content Include="dist\appTemplates.js" />
     <Content Include="gulpfile.js" />
     <Content Include="index.html" />
-    <Content Include="libs\vendor\angular-route.min.js" />
     <Content Include="libs\vendor\angular.min.js" />
     <Content Include="libs\vendor\rx.all.compat.min.js" />
     <Content Include="packages.config" />
@@ -100,17 +99,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <TypeScriptCompile Include="libs\custom\addOrUpdate.ts" />
-    <TypeScriptCompile Include="libs\custom\apiEndpointProvider.ts" />
     <TypeScriptCompile Include="libs\custom\component-extension.ts" />
-    <TypeScriptCompile Include="libs\custom\fetch.ts" />
-    <TypeScriptCompile Include="libs\custom\index.ts" />
-    <TypeScriptCompile Include="libs\custom\invoke-async.ts" />
     <TypeScriptCompile Include="libs\custom\localStorageManager.ts" />
-    <TypeScriptCompile Include="libs\custom\pluckOut.ts" />
-    <TypeScriptCompile Include="libs\custom\responsivir.ts" />
-    <TypeScriptCompile Include="libs\custom\route-when-extension.ts" />
-    <TypeScriptCompile Include="libs\custom\routeResolver.ts" />
     <TypeScriptCompile Include="libs\custom\safeDigest.ts" />
     <TypeScriptCompile Include="libs\custom\store.ts" />
     <TypeScriptCompile Include="typings\angularjs\angular.d.ts" />
