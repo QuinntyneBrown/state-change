@@ -7,3 +7,4 @@ function Component(config) {
     };
 }
 exports.Component = Component;
+//# sourceMappingURL=component-decorator.js.map

@@ -3,7 +3,6 @@ import { QueryActionCreator } from "../actions/query-actions";
 
 @Component({
     templateUrl: "wwwroot/components/app.html",
-    component: AppComponent,
     selector: "app",
     providers: ['queryActionCreator']
 })
