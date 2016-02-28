@@ -4,6 +4,7 @@ import { QueryActionCreator } from "./actions/query-actions";
 import { AppComponent } from "./components/app";
 import { setQueryReducer } from "./reducers/query-reducers";
 
+
 var app:any = angular.module("app", [
     "localStorageManager",
     "safeDigest",
@@ -16,12 +17,7 @@ app.config(["reducersProvider", reducersProvider => {
 
 app.service("queryActionCreator", ["dispatcher", QueryActionCreator]);
 
-app.component({
-    templateUrl: "wwwroot/components/app.html",
-    component: AppComponent,
-    selector: "app",
-    providers: ['queryActionCreator']
-});
+app.component((<any>AppComponent).config);
 
 app.config(["initialStateProvider", "localStorageManagerProvider", (initialStateProvider, localStorageManagerProvider) => {
     if (!localStorageManagerProvider.get({ name: "initialState" }))

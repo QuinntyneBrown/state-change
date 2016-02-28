@@ -99,6 +99,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <TypeScriptCompile Include="libs\custom\component-decorator.ts" />
     <TypeScriptCompile Include="libs\custom\component-extension.ts" />
     <TypeScriptCompile Include="libs\custom\localStorageManager.ts" />
     <TypeScriptCompile Include="libs\custom\safeDigest.ts" />

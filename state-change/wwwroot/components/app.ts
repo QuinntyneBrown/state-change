@@ -1,5 +1,14 @@
-﻿export class AppComponent {
-    constructor(private queryActionCreator) { }
+﻿import { Component } from "../../libs/custom/component-decorator";
+import { QueryActionCreator } from "../actions/query-actions";
+
+@Component({
+    templateUrl: "wwwroot/components/app.html",
+    component: AppComponent,
+    selector: "app",
+    providers: ['queryActionCreator']
+})
+export class AppComponent {
+    constructor(private queryActionCreator: QueryActionCreator) { }
 
     storeOnChange = state => {
         this._query = state.query;
